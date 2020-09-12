@@ -3,15 +3,15 @@
 
 ## This function creates a special "matrix" object that can cache its inverse.
 
-makeCacheMatrix <- function(x = matrix()) {
-  inv <- NULL
-  set <- function(y){
+makeCacheMatrix <- function(x = matrix()) {  ## define the argument with default mode of "matrix"
+  inv <- NULL                                ## initialize inv as NULL; will hold value of matrix inverse 
+  set <- function(y){                        ## define the set function to assign new 
     x <<- y
-    inv <<- NULL
+    inv <<- NULL                           ##if there is a new matrix, reset inv to NULL
   }
   get <- function() {x}
   setInverse <- function(inverse) {inv <<- inverse}
-  getInverse <- function() {inv}    #getting the inverse of matrix
+  getInverse <- function() {inv}            ##getting the inverse of matrix
   list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 
 }
