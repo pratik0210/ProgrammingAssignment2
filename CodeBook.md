@@ -1,7 +1,9 @@
+
+```{r cars}
 The data is taken from UCI HAR Dataset. This dataset provide the following variables for each activity:
   
   subject - ID of participant
-activity - ID of activity type
+  activity - ID of activity type
 Mean and standart deviation for the following features (other values are presented in initial dataset, but for this reasearch only these parameters were used)
 tBodyAcc-XYZ
 tGravityAcc-XYZ
@@ -35,3 +37,6 @@ The following data transformations were conducted to form a tidy dataset:
   Added a new feature activitylabel - factor variable for activities with the following levels: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
 
 Tidy dataset was build as a mean values of features grouped by activitylabel and subject - for each subject and activity type determined mean values over all activities of that type.
+
+
+```
